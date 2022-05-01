@@ -1,0 +1,12 @@
+Package: RFlaviaAPE
+Title: Flavia APE R package for automated reports based on GeoNature data
+Version: 0.0.1
+Authors@R: c(person("Donovan", "Maillard", email = "donovan.maillard@flavia-ape.fr", role = c("aut","cre")), person("Yann", "Baillet", email = "yann.baillet@flavia-ape.fr", role = c("aut")), person("Grégory", "Guicherd", email = "asso.flavia@gmail.com", role = c("aut")))
+Maintainer: Donovan Maillard <donovan.maillard@flavia-ape.fr>
+Description: Package permettant d'automatiser les analyses effectuées en routine sur des lots de données extraits d'une ou plusieurs instances de GeoNature.
+License: GPL-3 
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: knitr, magrittr, reportr, rmarkdown, markdown
+VignetteBuilder: knitr

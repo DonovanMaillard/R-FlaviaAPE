@@ -1,0 +1,35 @@
+---
+title: "Rapport_synthese"
+author: "Donovan Maillard, Yann Baillet - Flavia APE"
+output: html_document
+date: "Rapport généré automatiquement le `r format(Sys.time(), '%d %B %Y')`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Synthèse automatique de lot de données
+
+### Statistiques globales du lot de données
+
+- Nombre de données : **`r Nombre_donnees[1]`**
+- Nombre de jeux de données : ///TODO
+- Nombre de taxons : **`r Diversite[1]`**
+- Nombre de sessions de prospection : **`r Nombre_sessions[1]`**
+- Nombre de relevés : **`r Nombre_releves[1]`**
+
+
+#### Nombre de sessions par méthode :
+`r kable(head(Sessions_par_methode))`
+
+
+### Cartographie des relevés
+à venir, la cartographie des relevés
+
+### Informations taxonomiques
+
+- Liste des taxons, famille et nombre d'observations
+- Liste des taxons ayant un statut LR, protection ou ZNIEFF
+- Camembert des observations par famille

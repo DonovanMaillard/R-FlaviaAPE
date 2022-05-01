@@ -1,0 +1,18 @@
+#' Synthese globale d'un lot de données
+#' Fonction permettant d'obtenir les informations de synthèse sur un lot de données
+#' Renvoie le nombre de données, de taxons, de relevés, les méthodes utilisées etc.
+#'
+#' @param data Le tableau R des données à analyser à partir d'un export GeoNature
+#'
+#' @return Rapport de synthèse du lot de données
+#' @import utils
+#' @export
+flavia_get_synthese <- function(data){
+  Nombre_donnees<-dim(data)[1]
+  Diversite<-length(factor(unique(data$cd_ref)))
+  Nombre_sessions<-dim(unique(data[,c('date_debut','date_fin')]))[1]
+  Nombre_releves<-dim(unique(data[,c('date_debut','date_fin', 'wkt_l93')]))[1]
+  Sessions_par_methode<-aggregate(data$date_debut, by=list(data$technique_observation), FUN=length)
+
+  rmarkdown::render("template_report.Rmd")
+}

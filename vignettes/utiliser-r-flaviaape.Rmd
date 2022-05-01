@@ -1,0 +1,17 @@
+```{r setup}
+library(RFlaviaAPE)
+```
+
+---
+title: "utiliser-r-flaviaape"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{utiliser-r-flaviaape}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{exemple_fonction}
+# Décrire le rôle de la fonction
+load_from_geonature("mon_export_geonature.csv")
+```
