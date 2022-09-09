@@ -6,13 +6,19 @@
 #'
 #' @return Rapport de synthèse du lot de données
 #' @import utils
+#' @import rmarkdown
+#' @import markdown
+#' @import knitr
+#' @import magrittr
+#' @import stats
 #' @export
-flavia_get_synthese <- function(data){
-  Nombre_donnees<-dim(data)[1]
-  Diversite<-length(factor(unique(data$cd_ref)))
-  Nombre_sessions<-dim(unique(data[,c('date_debut','date_fin')]))[1]
-  Nombre_releves<-dim(unique(data[,c('date_debut','date_fin', 'wkt_l93')]))[1]
+fla_rapport <- function(data){
+  Nombre_donnees<-fla_nb_obs(data)[1]
+  Diversite<-fla_diversite(data)[1]
+  Nombre_JDD<-fla_nb_jdd(data)[1]
+  Nombre_sessions<-fla_nb_session(data)[1]
+  Nombre_releves<-fla_nb_releves(data)[1]
   Sessions_par_methode<-aggregate(data$date_debut, by=list(data$technique_observation), FUN=length)
 
-  rmarkdown::render("template_report.Rmd")
+  rmarkdown::render("templates/template_report.Rmd")
 }

@@ -2,9 +2,7 @@
 % Please edit documentation in R/load_from_geonature.R
 \name{load_from_geonature}
 \alias{load_from_geonature}
-\title{Importer un fichier csv provenant de GeoNature
-Une fonction pour importer un fichier csv issu d'un export
-GeoNature, sans modification d'encodage ni de format.}
+\title{Importe un fichier csv provenant de la Flaviabase GeoNature}
 \usage{
 load_from_geonature(file)
 }
@@ -15,7 +13,5 @@ load_from_geonature(file)
 L'object R comportant les données issues de l'export GeoNature
 }
 \description{
-Importer un fichier csv provenant de GeoNature
-Une fonction pour importer un fichier csv issu d'un export
-GeoNature, sans modification d'encodage ni de format.
+Importe un fichier csv provenant de la Flaviabase GeoNature
 }
