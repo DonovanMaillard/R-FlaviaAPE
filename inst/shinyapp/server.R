@@ -12,32 +12,29 @@ library(shinydashboard)
 
 options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 
-source("report.R")
-source("maps.R")
-
-# Chargement des fichiers 
+# Chargement des fichiers
 load_data <- function(input, output) {
     observeEvent(input$load, {
         req(input$file)
         df <- read.csv2(input$file$datapath, h=T, fileEncoding = "UTF-8")
-        
+
         # Nom par défaut si non fourni
         name <- input$df_name
         if (is.null(name) || name == "") {
             name <- "loaded_data"
         }
-        
+
         assign(name, df, envir = .GlobalEnv)
-        
+
         return(name)
-        
+
         # Fonction pour recharger la liste des objets
         liste_objets <- reactive({
             # Obtenir les noms des objets dans l'environnement global
             objets <- ls(envir = .GlobalEnv)
             return(objets)
         })
-        
+
         # Afficher la liste des objets dans l'interface
         output$liste_objets <- renderPrint({
             objets <- liste_objets()
