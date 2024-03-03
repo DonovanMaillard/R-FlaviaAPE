@@ -12,7 +12,7 @@ fla_nb_jdd(data, column = "jdd_uuid")
 \item{column}{Le nom du champs à utiliser pour calculer le nombre de jeux de données (jdd_uuid par défaut)}
 }
 \value{
-Le nombre de taxons compris dans un lot de données
+Le nombre de jeux de données compris dans un lot de données
 }
 \description{
 Calcule le nombre de jeux de données distincts dans un lot de données

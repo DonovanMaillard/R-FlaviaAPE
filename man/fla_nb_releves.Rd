@@ -23,7 +23,7 @@ fla_nb_releves(
 \item{localisation}{Le nom du champs à utiliser pour la localisation du relevé (wkt_l93 par défaut)}
 }
 \value{
-Le nombre de taxons compris dans un lot de données
+Le nombre de relevés effectués dans un lot de données
 }
 \description{
 Calcule le nombre de relevés effectués au sein d'un lot de données.

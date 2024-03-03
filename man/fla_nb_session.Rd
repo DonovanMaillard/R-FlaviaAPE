@@ -17,7 +17,7 @@ fla_nb_session(data, date_debut = "date_debut", date_fin = "date_fin")
 \item{date_fin}{Le nom du champs à utiliser pour la date de fin de la session (date_fin par défaut)}
 }
 \value{
-Le nombre de taxons compris dans un lot de données
+Le nombre de sessions de terrain dans un lot de données
 }
 \description{
 Calcule le nombre de sessions de terrain au sein d'un lot de données.
