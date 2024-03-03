@@ -24,51 +24,39 @@ dashboardPage(
     ),
     dashboardBody(
         tabItems(
-            
             # First tab content
-            tabItem(tabName = "loader",
+            tabItem(tabName = "report",
+                    h2("Générer un rapport automatique")
+            ),
+
+            # Second tab content
+            tabItem(tabName = "compare",
+                    h2("Comparer deux lots de données")
+            ),
+
+            # Third tab content
+            tabItem(tabName = "atlas",
+                    h2("Générer un atlas"),
                     fluidRow(
                         box(
-                            title = "Charger un fichier CSV",
-                            text = "Test",
-                            fileInput("file", "Sélectionner un fichier...")
+                            title = "Charger les données d'observations",
+                            "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
+                            fileInput("csv_obs", "Sélectionner un fichier...")
                         ),
-                        
                         box(
-                            title = "Nom de la table de données",
-                            textInput("df_name", "Nom de l'objet R contenant les données (sans espaces)", placeholder = "Saisir un nom"),
-                            actionButton("load", "Charger les données")
+                            title = "Charger la couche territoire en geojson",
+                            "Fichier GeoJSON comportant un ou plusieurs polygones, en WGS84",
+                            fileInput("territory_file", "Sélectionner un fichier...")
                         )
                     ),
                     fluidRow(
                         box(
-                            title = "Objets actuellement disponibles dans l'environnement",
-                            verbatimTextOutput("liste_objets")
+                            title = "Paramètres de l'atlas"
                         )
                     )
             ),
-            
-            # Second tab content
-            tabItem(tabName = "compile",
-                    h2("Compiler plusieurs fichiers de données")
-            ),
-            
-            # Third tab content
-            tabItem(tabName = "view",
-                    h2("Visualiser des données brutes")
-            ),
-            
+
             # Fourth tab content
-            tabItem(tabName = "report",
-                    h2("Générer un rapport automatique")
-            ),
-            
-            # Fivth tab content
-            tabItem(tabName = "maps",
-                    h2("Générer un atlas")
-            ),
-            
-            # Sixth tab content
             tabItem(tabName = "chrono",
                     h2("Analyse des données chronocapture")
             )
