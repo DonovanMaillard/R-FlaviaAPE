@@ -62,7 +62,8 @@ fla_generate_atlas <- function(df=data_sp, territory=NULL, url_basemap=NULL, wkt
     if (label) {
       map<-addControl(map, html=df_iter[[1, label_field]], position = "topright")
     }
-    map
+    # Attente 30secondes pour le chargement du WMS
+    Sys.sleep(30)
     # Imprimer chaque carte
     filename<-paste("atlas/",iterations[i],".png")
     mapshot(map, file = filename, cliprect = "viewport", remove_controls=c("zoomControl", "layersControl","homeButton") )
