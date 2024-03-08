@@ -41,7 +41,7 @@ fla_generate_atlas <- function(df=data_sp, territory=NULL, url_basemap=NULL, wkt
   # Fond de carte
   if (missing(url_basemap)) {
     url_basemap<-"https://data.geopf.fr/wms-r/wms"
-    message("Aucun URL de Webservice WMS n'a été fourni pour le paramètre url_basemap. Un fond topographique de l'IGN sera utilisé par défaut : https://wxs.ign.fr/inspire/inspire/r/wms")
+    message("Aucun URL de Webservice WMS n'a été fourni pour le paramètre url_basemap. Un fond topographique de l'IGN sera utilisé par défaut : https://data.geopf.fr/wms-r/wms")
   }
 
   # Créer un répertoire atlas si non existant
