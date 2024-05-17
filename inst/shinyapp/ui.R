@@ -25,16 +25,16 @@ dashboardPage(
             tabItem(tabName = "report",
                     h1("Générer un rapport automatique"),
                     fluidRow(
-                        box(title = "Données sources", status = "info", solidHeader = TRUE, width = 12,
+                        box(title = "Données sources", status = "alert", solidHeader = TRUE, width = 12,
                             fluidRow(
                                 column(12,
                                     fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width="100%", buttonLabel="Sélectionner un fichier"),
                                 ),
                                 column(6,
-                                    textInput(inputId="token-lifetraits", label="Token de l'export 'Traits de vie'", width="45%", placeholder="Disponible depuis le module exports de la FlaviaBase"),
+                                    textInput(inputId="token-lifetraits", label="Token de l'export 'Traits de vie'", placeholder="Disponible depuis le module exports de la FlaviaBase"),
                                 ),
                                 column(6,
-                                    fileInput(inputId="geojson-file", label="Fichier geojson du territoire étudié (optionnel)", width="45%", buttonLabel="Sélectionner un fichier GeoJson")
+                                    fileInput(inputId="geojson-file", label="Fichier geojson du territoire étudié (optionnel)", buttonLabel="Sélectionner un fichier GeoJson")
                                 )
                             )
                         )
@@ -43,7 +43,9 @@ dashboardPage(
                         box(title = "Analyse descriptive du lot de données", status = "primary", solidHeader = TRUE, width = 12,
                             # Données de synthèse globale
                             fluidRow(
-                                h3("Chiffres clés"),
+                                column(12, 
+                                    h3("Chiffres clés")
+                                ),
                                 column(6,
                                     textInput("input1", "Input 1", "Valeur 1")
                                 ),
@@ -51,9 +53,11 @@ dashboardPage(
                                     textInput("input2", "Input 2", "Valeur 2")
                                 )
                             ),
-                            # Graphiques
+                            # Prospection
                             fluidRow(
-                                h3("Graphiques"),
+                                column(12, 
+                                    h3("Effort de prospection")
+                                ),
                                 column(6,
                                     textInput("input1", "Input 1", "Valeur 1")
                                 ),
@@ -61,26 +65,18 @@ dashboardPage(
                                     textInput("input2", "Input 2", "Valeur 2")
                                 )
                             ),
-                            # Cartes
+                            # Espèces et traits de vie
                             fluidRow(
-                                h3("Cartes"),
+                                column(12, 
+                                    h3("Espèces et traits de vie")
+                                ),
                                 column(6,
                                     textInput("input1", "Input 1", "Valeur 1")
                                 ),
                                 column(6,
                                     textInput("input2", "Input 2", "Valeur 2")
                                 )
-                            ),
-                            # Liste des espèces
-                            fluidRow(
-                                h3("Liste des espèces"),
-                                column(6,
-                                    textInput("input1", "Input 1", "Valeur 1")
-                                ),
-                                column(6,
-                                    textInput("input2", "Input 2", "Valeur 2")
-                                )
-                            ),
+                            )
                         )
                     )
             ),
