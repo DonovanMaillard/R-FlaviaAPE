@@ -14,23 +14,31 @@ dashboardPage(
     dashboardHeader(title = "Flavia APE - Analyses"),
     dashboardSidebar(
         sidebarMenu(
-            menuItem("Charger des données", tabName = "loader", icon = icon("upload")),
-            menuItem("Compiler des données", tabName = "compile", icon = icon("copy")),
-            menuItem("Visualiser des données", tabName = "view", icon = icon("table")),
             menuItem("Générer un rapport", tabName = "report", icon = icon("file")),
-            menuItem("Générer un atlas", tabName = "maps", icon = icon("map")),
-            menuItem("Analyse chronocapture", tabName = "chrono", icon = icon("clock"))
+            menuItem("Compiler des données", tabName = "compile", icon = icon("copy")),
+            menuItem("Générer un atlas", tabName = "atlas", icon = icon("map"))
         )
     ),
     dashboardBody(
         tabItems(
             # First tab content
             tabItem(tabName = "report",
-                    h2("Générer un rapport automatique")
+                    h2("Générer un rapport automatique"),
+                    fluidRow(
+                        box(
+                            title = "Chargement du jeu de données",
+                            "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
+                            fileInput("csv_data", "Sélectionner un fichier...")
+                        ),
+                        box(
+                            title = "Résultats",
+                            "Fichier GeoJSON comportant un ou plusieurs polygones, en WGS84",
+                        )
+                    ),
             ),
 
             # Second tab content
-            tabItem(tabName = "compare",
+            tabItem(tabName = "compile",
                     h2("Comparer deux lots de données")
             ),
 
