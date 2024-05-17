@@ -23,10 +23,10 @@ dashboardPage(
         tabItems(
             # First tab content
             tabItem(tabName = "report",
-                    h2("Générer un rapport automatique"),
+                    h1("Générer un rapport automatique"),
                     fluidRow(
                         div(class = "col-md-12",
-                            h1("Chargement du jeu de données"),
+                            h2("Chargement du jeu de données"),
                             box(
                                 title = "Fichier source",
                                 "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
@@ -40,19 +40,19 @@ dashboardPage(
                     ),
                     fluidRow(
                         div(class = "col-md-12",
-                            h1("Rapport automatique"),
+                            h2("Rapport automatique"),
                         )
                     ),
             ),
 
             # Second tab content
             tabItem(tabName = "compile",
-                    h2("Comparer deux lots de données")
+                    h1("Comparer deux lots de données")
             ),
 
             # Third tab content
             tabItem(tabName = "atlas",
-                    h2("Générer un atlas"),
+                    h1("Générer un atlas"),
                     fluidRow(
                         box(
                             title = "Charger les données d'observations",
