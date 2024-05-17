@@ -41,13 +41,13 @@ dashboardPage(
                     ),
                     # Si les données sources sont en attente : 
                     fluidRow(
-                        box(title = "Analyse descriptive du lot de données", status = "warning", solidHeader = TRUE, width = 12,
+                        box(title = "Rapport automatique", status = "warning", solidHeader = TRUE, width = 12,
                             h2("En attente de données sources")
                         )
                         ),
                     # Si des données sources sont fournies, retourner le rapport :
                     fluidRow(
-                        box(title = "Analyse descriptive du lot de données", status = "success", solidHeader = TRUE, width = 12,
+                        box(title = "Rapport automatique : analyse descriptive", status = "success", solidHeader = TRUE, width = 12,
                             # Données de synthèse globale
                             fluidRow(
                                 column(12, 
