@@ -41,14 +41,14 @@ dashboardPage(
                             ),
                             box(
                                 title = "Contour du territoire (Optionnel)",
-                                "Fichier GeoJSON du territoire d'étude"
+                                "Fichier GeoJSON du territoire d'étude",
                                 textInput("geojson-file", "Fichier geojson du territoire étudié (optionnel)"),
                                 width=6
                             )
                         )
                     ),
                     fluidRow(
-                        div(width=12,
+                        box(width=12,
                             h2("Analyse descriptive du lot de données")
                         )
                     ),
@@ -107,11 +107,6 @@ dashboardPage(
                             title = "Paramètres de l'atlas"
                         )
                     )
-            ),
-
-            # Fourth tab content
-            tabItem(tabName = "chrono",
-                    h2("Analyse des données chronocapture")
             )
         )
     )
