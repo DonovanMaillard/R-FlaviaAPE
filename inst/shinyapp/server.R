@@ -34,7 +34,14 @@ function(input, output) {
       stop("Type de fichier non supporté.")
     }
   })
+
+  nb_data <- reactive({
+        dim(data)[1]
+    })
   
   # Afficher les données dans la UI
-  output$nb_data <- dim(data)[1]
+  output$nb_data <- renderText({
+        # Le texte dépend de la valeur du slider
+        paste("Nombre total de données : ", nb_data)
+    })
 }
