@@ -24,18 +24,23 @@ dashboardPage(
             # First tab content
             tabItem(tabName = "report",
                     h2("Générer un rapport automatique"),
-                    Row(
-                        box(
-                            title = "Chargement du jeu de données",
-                            "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
-                            fileInput("csv_data", "Sélectionner un fichier..."),
-                            textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
+                    fluidRow(
+                        div(class = "col-md-12",
+                            h1("Chargement du jeu de données"),
+                            box(
+                                title = "Fichier source",
+                                "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
+                                fileInput("csv_data", "Sélectionner un fichier...")
+                            ),
+                            box(
+                                title = "Token de l'export Traits de vie",
+                                textInput("token-lifetraits", "Token de l'export 'Traits de vie'")
+                            )
                         )
                     ),
                     fluidRow(
-                        box(
-                            title = "Résultats",
-                            "Ici apparaitra le rapport comprenant à minima : nombre de données, nombre de taxons, nombre de dates de relevés, carte de relevés, liste des espèces, graphiques des traits de vie etc",
+                        div(class = "col-md-12",
+                            h1("Rapport automatique"),
                         )
                     ),
             ),
