@@ -25,36 +25,66 @@ dashboardPage(
             tabItem(tabName = "report",
                     h1("Générer un rapport automatique"),
                     fluidRow(
-                        div(class = "col-md-12",
+                        box(width=12,
                             h2("Chargement du jeu de données"),
                             box(
                                 title = "Fichier source",
-                                "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
-                                fileInput("csv_data", "Sélectionner un fichier..."),
+                                "Fichier CSV exporté de la Flaviabase",
+                                fileInput("csv-flavia-file", "Sélectionner un fichier..."),
                                 width=12
                             ),
                             box(
-                                title = "Token de l'export Traits de vie",
+                                title = "Token de l'export Traits de vie (Optionnel)",
+                                "Disponible depuis le module d'exports de la flaviabase",
                                 textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
                                 width=6
                             ),
                             box(
-                                title = "Contour du territoire",
-                                textInput("token-lifetraits", "Fichier geojson du territoire étudié (optionnel)"),
+                                title = "Contour du territoire (Optionnel)",
+                                "Fichier GeoJSON du territoire d'étude"
+                                textInput("geojson-file", "Fichier geojson du territoire étudié (optionnel)"),
                                 width=6
                             )
                         )
                     ),
                     fluidRow(
-                        div(class = "col-md-12",
-                            h2("Rapport automatique"),
+                        div(width=12,
+                            h2("Analyse descriptive du lot de données")
                         )
                     ),
             ),
 
             # Second tab content
             tabItem(tabName = "compile",
-                    h1("Comparer deux lots de données")
+                    h1("Compiler deux lots de données"),
+                    fluidRow(
+                        div(width=12,
+                            h2("Chargement des jeux de données"),
+                            box(
+                                title = "Fichier CSV de référence",
+                                "Fichier CSV de référence (FlaviaBase)",
+                                fileInput("csv-ref-file", "Sélectionner un fichier..."),
+                                width=6
+                            ),
+                            box(
+                                title = "Fichier CSV à comparer (bibliographie)",
+                                "Fichier CSV à comparer (SINP)",
+                                fileInput("csv-biblio-file", "Sélectionner un fichier..."),
+                                width=6
+                            ),
+                            box(
+                                title = "Token de l'export Traits de vie (Optionnel)",
+                                "Disponible depuis le module d'exports de la flaviabase",
+                                textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
+                                width=6
+                            )
+                        )
+                    ),
+                    fluidRow(
+                        div(width=12,
+                            h2("Analyse descriptive du lot de données"),
+                        )
+                    ),
             ),
 
             # Third tab content
