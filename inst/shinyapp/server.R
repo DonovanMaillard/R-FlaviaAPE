@@ -11,3 +11,8 @@ library(shiny)
 library(shinydashboard)
 
 options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
+
+
+function(input, output, session) {
+	'todo'
+}
