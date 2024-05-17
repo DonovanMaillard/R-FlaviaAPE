@@ -30,11 +30,18 @@ dashboardPage(
                             box(
                                 title = "Fichier source",
                                 "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
-                                fileInput("csv_data", "Sélectionner un fichier...")
+                                fileInput("csv_data", "Sélectionner un fichier..."),
+                                width=12
                             ),
                             box(
                                 title = "Token de l'export Traits de vie",
-                                textInput("token-lifetraits", "Token de l'export 'Traits de vie'")
+                                textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
+                                width=6
+                            ),
+                            box(
+                                title = "Contour du territoire",
+                                textInput("token-lifetraits", "Fichier geojson du territoire étudié (optionnel)"),
+                                width=6
                             )
                         )
                     ),
