@@ -27,24 +27,9 @@ dashboardPage(
                     fluidRow(
                         box(width=12,
                             h2("Chargement du jeu de données"),
-                            box(
-                                title = "Fichier source",
-                                "Fichier CSV exporté de la Flaviabase",
-                                fileInput("csv-flavia-file", "Sélectionner un fichier..."),
-                                width=12
-                            ),
-                            box(
-                                title = "Token de l'export Traits de vie (Optionnel)",
-                                "Disponible depuis le module d'exports de la flaviabase",
-                                textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
-                                width=6
-                            ),
-                            box(
-                                title = "Contour du territoire (Optionnel)",
-                                "Fichier GeoJSON du territoire d'étude",
-                                textInput("geojson-file", "Fichier geojson du territoire étudié (optionnel)"),
-                                width=6
-                            )
+                            fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width=100%, buttonLabel="Sélectionner un fichier"),
+                            textInput(inputId="token-lifetraits", label="Token de l'export 'Traits de vie'", width=50%, placeholder="Disponible depuis le module exports de la FlaviaBase"),
+                            fileInput(inputId="geojson-file", label="Fichier geojson du territoire étudié (optionnel)", width=50%, buttonLabel="Sélectionner un fichier GeoJson")
                         )
                     ),
                     fluidRow(
