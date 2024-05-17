@@ -13,10 +13,6 @@ library(shinydashboard)
 options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 
 
-function(input, output, session) {
-	'todo'
-}
-
 #
 # Onglet rapport automatique
 # 
@@ -24,7 +20,7 @@ function(input, output, session) {
 function(input, output) {
   # Stocker le fichier source chargé dans un dataframe
   data <- reactive({
-    file <- input$csv-flavia-file
+    file <- input$csv_flavia_file  # Correction du nom de l'input (utilisez des underscores)
     if (is.null(file))
       return(NULL)
     ext <- tools::file_ext(file$name)
@@ -35,13 +31,18 @@ function(input, output) {
     }
   })
 
+  # Calculer le nombre de données
   nb_data <- reactive({
-        dim(data)[1]
-    })
+    if (is.null(data())) {
+      return(0)  # retourner 0 si les données sont NULL
+    } else {
+      return(nrow(data()))  # utiliser nrow pour obtenir le nombre de lignes
+    }
+  })
   
-  # Afficher les données dans la UI
+  # Afficher le nombre total de données dans la UI
   output$nb_data <- renderText({
-        # Le texte dépend de la valeur du slider
-        paste("Nombre total de données : ", nb_data)
-    })
+    # Utiliser nb_data() pour obtenir la valeur de l'expression réactive
+    paste("Nombre total de données : ", nb_data())
+  })
 }
