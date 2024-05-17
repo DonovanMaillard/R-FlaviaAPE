@@ -25,7 +25,7 @@ dashboardPage(
             tabItem(tabName = "report",
                     h1("Générer un rapport automatique"),
                     fluidRow(
-                        box(width=12,
+                        box(width=12, title="", 
                             h2("Chargement du jeu de données"),
                             fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width="100%", buttonLabel="Sélectionner un fichier"),
                             textInput(inputId="token-lifetraits", label="Token de l'export 'Traits de vie'", width="45%", placeholder="Disponible depuis le module exports de la FlaviaBase"),
@@ -37,7 +37,22 @@ dashboardPage(
                             h2("Analyse descriptive du lot de données")
                         )
                     ),
+
+                    fluidRow(
+                        box(title = "Entrées multiples", status = "primary", solidHeader = TRUE, width = 12,
+                            fluidRow(
+                                column(6,
+                                    textInput("input1", "Input 1", "Valeur 1")
+                                ),
+                                column(6,
+                                    textInput("input2", "Input 2", "Valeur 2")
+                                )
+                            )
+                        )
+                    )
             ),
+
+
 
             # Second tab content
             tabItem(tabName = "compile",
