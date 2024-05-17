@@ -25,7 +25,7 @@ dashboardPage(
             tabItem(tabName = "report",
                     h1("Générer un rapport automatique"),
                     fluidRow(
-                        box(title = "Données sources", status = "alert", solidHeader = TRUE, width = 12,
+                        box(title = "Données sources", status = "primary", solidHeader = TRUE, width = 12,
                             fluidRow(
                                 column(12,
                                     fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width="100%", buttonLabel="Sélectionner un fichier"),
@@ -40,7 +40,7 @@ dashboardPage(
                         )
                     ),
                     fluidRow(
-                        box(title = "Analyse descriptive du lot de données", status = "primary", solidHeader = TRUE, width = 12,
+                        box(title = "Analyse descriptive du lot de données", status = "success", solidHeader = TRUE, width = 12,
                             # Données de synthèse globale
                             fluidRow(
                                 column(12, 
