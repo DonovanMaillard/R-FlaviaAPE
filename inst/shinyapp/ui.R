@@ -30,9 +30,8 @@ dashboardPage(
                             "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
                             fileInput("csv_data", "Sélectionner un fichier..."),
                             textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
-                        ),
+                        )
                     ),
-
                     fluidRow(
                         box(
                             title = "Résultats",
