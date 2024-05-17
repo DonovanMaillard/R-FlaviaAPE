@@ -28,11 +28,15 @@ dashboardPage(
                         box(
                             title = "Chargement du jeu de données",
                             "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
-                            fileInput("csv_data", "Sélectionner un fichier...")
+                            fileInput("csv_data", "Sélectionner un fichier..."),
+                            textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
                         ),
+                    ),
+
+                    fluidRow(
                         box(
                             title = "Résultats",
-                            "Fichier GeoJSON comportant un ou plusieurs polygones, en WGS84",
+                            "Ici apparaitra le rapport comprenant à minima : nombre de données, nombre de taxons, nombre de dates de relevés, carte de relevés, liste des espèces, graphiques des traits de vie etc",
                         )
                     ),
             ),
