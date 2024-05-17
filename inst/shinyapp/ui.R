@@ -46,11 +46,14 @@ dashboardPage(
                                 column(12, 
                                     h3("Chiffres clés")
                                 ),
-                                column(6,
-                                    textInput("input1", "Input 1", "Valeur 1")
+                                column(4,
+                                    "Nombre de données"
                                 ),
-                                column(6,
-                                    textInput("input2", "Input 2", "Valeur 2")
+                                column(4,
+                                    "Nombre d'espèces"
+                                ),
+                                column(4,
+                                    "Nombre de relevés"
                                 )
                             ),
                             # Prospection
@@ -59,10 +62,10 @@ dashboardPage(
                                     h3("Effort de prospection")
                                 ),
                                 column(6,
-                                    textInput("input1", "Input 1", "Valeur 1")
+                                    "Méthodes utilisées"
                                 ),
                                 column(6,
-                                    textInput("input2", "Input 2", "Valeur 2")
+                                    "Carte"
                                 )
                             ),
                             # Espèces et traits de vie
@@ -71,10 +74,10 @@ dashboardPage(
                                     h3("Espèces et traits de vie")
                                 ),
                                 column(6,
-                                    textInput("input1", "Input 1", "Valeur 1")
+                                    "Tableau des espèces"
                                 ),
                                 column(6,
-                                    textInput("input2", "Input 2", "Valeur 2")
+                                    "Graphiques, statuts, traits de vie etc"
                                 )
                             )
                         )
