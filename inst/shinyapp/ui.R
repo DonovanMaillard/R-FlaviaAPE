@@ -58,7 +58,7 @@ dashboardPage(
             tabItem(tabName = "compile",
                     h1("Compiler deux lots de données"),
                     fluidRow(
-                        div(width=12,
+                        box(width=12,
                             h2("Chargement des jeux de données"),
                             box(
                                 title = "Fichier CSV de référence",
@@ -81,7 +81,7 @@ dashboardPage(
                         )
                     ),
                     fluidRow(
-                        div(width=12,
+                        box(width=12,
                             h2("Analyse descriptive du lot de données"),
                         )
                     ),
