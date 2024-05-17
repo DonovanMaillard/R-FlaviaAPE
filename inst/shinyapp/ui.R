@@ -28,7 +28,7 @@ dashboardPage(
                         box(title = "Données sources", status = "primary", solidHeader = TRUE, width = 12,
                             fluidRow(
                                 column(12,
-                                    fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width="100%", buttonLabel="Sélectionner un fichier"),
+                                    fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width="100%", accept=".csv", buttonLabel="Sélectionner un fichier"),
                                 ),
                                 column(6,
                                     textInput(inputId="token-lifetraits", label="Token de l'export 'Traits de vie'", placeholder="Disponible depuis le module exports de la FlaviaBase"),
@@ -41,9 +41,7 @@ dashboardPage(
                     ),
                     # Si les données sources sont en attente : 
                     fluidRow(
-                        box(title = "Rapport automatique", status = "warning", solidHeader = TRUE, width = 12,
-                            h2("En attente de données sources")
-                        )
+                        "En attente de données à analyser"
                         ),
                     # Si des données sources sont fournies, retourner le rapport :
                     fluidRow(
@@ -54,7 +52,8 @@ dashboardPage(
                                     h3("Chiffres clés")
                                 ),
                                 column(4,
-                                    "Nombre de données"
+                                    "Nombre total de données",
+                                    textOutput("nb_data")
                                 ),
                                 column(4,
                                     "Nombre d'espèces"

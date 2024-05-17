@@ -16,3 +16,25 @@ options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 function(input, output, session) {
 	'todo'
 }
+
+#
+# Onglet rapport automatique
+# 
+
+function(input, output) {
+  # Stocker le fichier source chargé dans un dataframe
+  data <- reactive({
+    file <- input$csv-flavia-file
+    if (is.null(file))
+      return(NULL)
+    ext <- tools::file_ext(file$name)
+    if (ext == "csv") {
+      read.csv2(file$datapath, header = input$header)
+    } else {
+      stop("Type de fichier non supporté.")
+    }
+  })
+  
+  # Afficher les données dans la UI
+  output$nb_data <- dim(data)[1]
+}
