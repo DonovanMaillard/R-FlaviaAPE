@@ -24,7 +24,7 @@ dashboardPage(
             # First tab content
             tabItem(tabName = "report",
                     h2("Générer un rapport automatique"),
-                    fluidRow(
+                    Row(
                         box(
                             title = "Chargement du jeu de données",
                             "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
