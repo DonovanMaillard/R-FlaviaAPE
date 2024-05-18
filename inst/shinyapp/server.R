@@ -19,7 +19,7 @@ options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 
 function(input, output) {
   # Stocker le fichier source chargé dans un dataframe
-  data <- eventReactive(input$goButton, {
+  data <- reactive({
     file <- req(input$csv_flavia_file)  # Correction du nom de l'input (utilisez des underscores)
     if (is.null(file))
       print("Data is NULL")
