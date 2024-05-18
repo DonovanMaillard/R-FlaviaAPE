@@ -19,8 +19,8 @@ options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 
 function(input, output) {
   # Stocker le fichier source chargé dans un dataframe
-  observeEvent(input$goButton, {
-    token <- paste("La token est", input$token-lifetraits)
+  observeEvent(input$'goButton', {
+    output$token <- paste("La token est ", input$'token-lifetraits')
   })
   
 }
