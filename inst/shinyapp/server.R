@@ -45,4 +45,8 @@ function(input, output) {
     # Utiliser nb_data() pour obtenir la valeur de l'expression réactive
     paste("Nombre total de données : ", nb_data())
   })
+
+  output$contents <- renderTable({
+    data()
+  })
 }

@@ -56,7 +56,7 @@ dashboardPage(
                                     textOutput("nb_data")
                                 ),
                                 column(4,
-                                    "Nombre d'espèces"
+                                    tableOutput("contents")
                                 ),
                                 column(4,
                                     "Nombre de relevés"
