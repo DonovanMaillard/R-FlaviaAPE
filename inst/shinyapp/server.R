@@ -22,8 +22,10 @@ function(input, output) {
   data <- eventReactive(input$goButton, {
     file <- req(input$csv_flavia_file)  # Correction du nom de l'input (utilisez des underscores)
     if (is.null(file))
+      print("Data is NULL")
       return(NULL)
     ext <- tools::file_ext(file$name)
+    print(paste("File extension:", ext))
     if (ext == "csv") {
       read.csv2(file$datapath, header = input$header)
     } else {
