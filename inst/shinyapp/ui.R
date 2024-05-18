@@ -44,7 +44,7 @@ dashboardPage(
                     ),
                     # Si les données sources sont en attente : 
                     fluidRow(
-                        output$'token'
+                        textOutput("token")
                         ),
                     # Si des données sources sont fournies, retourner le rapport :
                     fluidRow(
