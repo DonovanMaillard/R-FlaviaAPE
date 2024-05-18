@@ -35,6 +35,9 @@ dashboardPage(
                                 ),
                                 column(6,
                                     fileInput(inputId="geojson-file", label="Fichier geojson du territoire étudié (optionnel)", buttonLabel="Sélectionner un fichier GeoJson")
+                                ),
+                                column(12,
+                                    actionButton("goButton", "Produire le rapport")
                                 )
                             )
                         )
