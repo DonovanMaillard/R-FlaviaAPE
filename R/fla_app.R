@@ -4,6 +4,7 @@
 #' @return Lance l'application dashboard de Flavia APE
 #' @import shiny
 #' @import shinydashboard
+#' @import DT
 #' @export
 
 fla_app <- function() {

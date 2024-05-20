@@ -9,6 +9,7 @@
 
 library(shiny)
 library(shinydashboard)
+library(DT)
 
 options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 
@@ -18,11 +19,26 @@ options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 # 
 
 function(input, output) {
-  # Stocker le fichier source chargé dans un dataframe
-  observeEvent(input$'goButton', {
-    output$token <- renderText({
-     paste("La token est ", input$'token-lifetraits')
-    })
+  # Récupérer le fichier de données 
+  data <- reactive({
+    req(input$csvFlaviaFile)
+    tryCatch(
+      {
+        read.csv2(input$csvFlaviaFile$datapath, h=T)
+      },
+      error = function(e) {
+        stop(safeError(e))
+      }
+    )
   })
+
+
+  # Déclencher l'analyse au clic de l'utilisateur
+  input$LaunchReport
+  isolate({
+    output$DTData <- renderDT({
+      data
+      })
+    })
   
 }

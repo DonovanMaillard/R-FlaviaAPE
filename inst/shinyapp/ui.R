@@ -28,16 +28,16 @@ dashboardPage(
                         box(title = "Données sources", status = "primary", solidHeader = TRUE, width = 12,
                             fluidRow(
                                 column(12,
-                                    fileInput(inputId="csv-flavia-file", label="Fichier CSV exporté de la Flaviabase", width="100%", accept=".csv", buttonLabel="Sélectionner un fichier"),
+                                    fileInput(inputId="csvFlaviaFile", label="Fichier CSV exporté de la Flaviabase", width="100%", accept=".csv", buttonLabel="Sélectionner un fichier"),
                                 ),
                                 column(6,
-                                    textInput(inputId="token-lifetraits", label="Token de l'export 'Traits de vie'", placeholder="Disponible depuis le module exports de la FlaviaBase"),
+                                    textInput(inputId="tokenLifetraits", label="Token de l'export 'Traits de vie'", placeholder="Disponible depuis le module exports de la FlaviaBase"),
                                 ),
                                 column(6,
-                                    fileInput(inputId="geojson-file", label="Fichier geojson du territoire étudié (optionnel)", buttonLabel="Sélectionner un fichier GeoJson")
+                                    fileInput(inputId="geojsonFile", label="Fichier geojson du territoire étudié (optionnel)", buttonLabel="Sélectionner un fichier GeoJson")
                                 ),
                                 column(12,
-                                    actionButton("goButton", "Produire le rapport")
+                                    actionButton(inputId="launchReport", label="Générer le rapport")
                                 )
                             )
                         )
@@ -63,6 +63,9 @@ dashboardPage(
                                 ),
                                 column(4,
                                     "Nombre de relevés"
+                                ), 
+                                column(12,
+                                    DTOutput(outputId="OPData")
                                 )
                             ),
                             # Prospection
