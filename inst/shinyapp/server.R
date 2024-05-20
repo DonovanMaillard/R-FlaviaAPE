@@ -21,15 +21,15 @@ options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 function(input, output) {
   # Récupérer le fichier de données 
   data <- reactive({
-    #req(input$csvFlaviaFile)
-    read.csv2(input$csvFlaviaFile$datapath, h=T)
+        file <- input$csvFlaviaFile
+        if (is.null(file)) {
+            return(data.frame())  # retourne un dataframe vide si aucun fichier n'est chargé
+        }
+        read.csv(file$datapath)
     })
 
-    # Déclencher l'analyse au clic de l'utilisateur
-    output$DTData <- renderDT({
-      input$LaunchReport
-        isolate({
-          data()
-        })
-      })
+  output$dataTable <- renderDT({
+        datatable(data(), options = list(pageLength = 5))  # affiche les données avec pagination
+    })
+  
 }
