@@ -52,45 +52,8 @@ dashboardPage(
                         box(title = "Rapport automatique : analyse descriptive", status = "success", solidHeader = TRUE, width = 12,
                             # Données de synthèse globale
                             fluidRow(
-                                column(12, 
-                                    h3("Chiffres clés")
-                                ),
-                                column(4,
-                                    "Nombre total de données",
-                                    textOutput("nb_data")
-                                ),
-                                column(4,
-                                    tableOutput("contents")
-                                ),
-                                column(4,
-                                    "Nombre de relevés"
-                                ), 
                                 column(12,
                                     DTOutput(outputId="OPData")
-                                )
-                            ),
-                            # Prospection
-                            fluidRow(
-                                column(12, 
-                                    h3("Effort de prospection")
-                                ),
-                                column(6,
-                                    "Méthodes utilisées"
-                                ),
-                                column(6,
-                                    "Carte"
-                                )
-                            ),
-                            # Espèces et traits de vie
-                            fluidRow(
-                                column(12, 
-                                    h3("Espèces et traits de vie")
-                                ),
-                                column(6,
-                                    "Tableau des espèces"
-                                ),
-                                column(6,
-                                    "Graphiques, statuts, traits de vie etc"
                                 )
                             )
                         )
