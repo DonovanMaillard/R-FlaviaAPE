@@ -46,7 +46,7 @@ dashboardPage(
                     # Si des données sources sont fournies, retourner le rapport :
                     fluidRow(
                         box(title = "Rapport automatique : analyse descriptive", status = "success", solidHeader = TRUE, width = 12,
-                            DTOutput(outputId="OPData")
+                            DTOutput(outputId="dataTable")
                             )
                         )
                     )
