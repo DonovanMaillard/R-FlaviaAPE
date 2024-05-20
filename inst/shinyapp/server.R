@@ -38,4 +38,8 @@ function(input, output) {
         datatable(response(), options = list(pageLength = 5))  # affiche les données avec pagination
     })
 
+  output$nb_species <- renderText({
+        nrows(response())
+    })
+
 }

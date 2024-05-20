@@ -34,12 +34,17 @@ dashboardPage(
                             )
                         )
                     ),
-                    # Si des données sources sont fournies, retourner le rapport :
                     fluidRow(
-                        box(title = "Rapport automatique : analyse descriptive", status = "success", solidHeader = TRUE, width = 12,
+                        box(title = "Statistiques globales", status = "success", solidHeader = TRUE, width = 12,
+                            textOutput(outputId="nb_species")
+                        )
+                    ),
+                    # Retourner la liste des espèces dans une datatable
+                    fluidRow(
+                        box(title = "Taxons", status = "success", solidHeader = TRUE, width = 12,
                             DTOutput(outputId="dataTable")
                         )
-                )
+                    )
             )
         )
     )
