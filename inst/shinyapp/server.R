@@ -21,15 +21,8 @@ options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 function(input, output) {
   # Récupérer le fichier de données 
   data <- reactive({
-    req(input$csvFlaviaFile)
-    tryCatch(
-      {
-        read.csv2(input$csvFlaviaFile$datapath, h=T)
-      },
-      error = function(e) {
-        stop(safeError(e))
-      }
-    )
+    #req(input$csvFlaviaFile)
+    read.csv2(input$csvFlaviaFile$datapath, h=T)
     })
 
     # Déclencher l'analyse au clic de l'utilisateur
