@@ -30,15 +30,6 @@ dashboardPage(
                             fluidRow(
                                 column(12,
                                     fileInput(inputId="csvFlaviaFile", label="Fichier CSV exporté de la Flaviabase", width="100%", accept=".csv", buttonLabel="Sélectionner un fichier"),
-                                ),
-                                column(6,
-                                    textInput(inputId="tokenLifetraits", label="Token de l'export 'Traits de vie'", placeholder="Disponible depuis le module exports de la FlaviaBase"),
-                                ),
-                                column(6,
-                                    fileInput(inputId="geojsonFile", label="Fichier geojson du territoire étudié (optionnel)", buttonLabel="Sélectionner un fichier GeoJson")
-                                ),
-                                column(12,
-                                    actionButton(inputId="launchReport", label="Générer le rapport")
                                 )
                             )
                         )
@@ -47,67 +38,10 @@ dashboardPage(
                     fluidRow(
                         box(title = "Rapport automatique : analyse descriptive", status = "success", solidHeader = TRUE, width = 12,
                             DTOutput(outputId="dataTable")
-                            )
                         )
-                    )
-            ),
-
-
-
-            # Second tab content
-            tabItem(tabName = "compile",
-                    h1("Compiler deux lots de données"),
-                    fluidRow(
-                        box(width=12,
-                            h2("Chargement des jeux de données"),
-                            box(
-                                title = "Fichier CSV de référence",
-                                "Fichier CSV de référence (FlaviaBase)",
-                                fileInput("csv-ref-file", "Sélectionner un fichier..."),
-                                width=6
-                            ),
-                            box(
-                                title = "Fichier CSV à comparer (bibliographie)",
-                                "Fichier CSV à comparer (SINP)",
-                                fileInput("csv-biblio-file", "Sélectionner un fichier..."),
-                                width=6
-                            ),
-                            box(
-                                title = "Token de l'export Traits de vie (Optionnel)",
-                                "Disponible depuis le module d'exports de la flaviabase",
-                                textInput("token-lifetraits", "Token de l'export 'Traits de vie'"),
-                                width=6
-                            )
-                        )
-                    ),
-                    fluidRow(
-                        box(width=12,
-                            h2("Analyse descriptive du lot de données"),
-                        )
-                    ),
-            ),
-
-            # Third tab content
-            tabItem(tabName = "atlas",
-                    h1("Générer un atlas"),
-                    fluidRow(
-                        box(
-                            title = "Charger les données d'observations",
-                            "Format CSV ; avec un champs de géométrie au format WKT en WGS84",
-                            fileInput("csv_obs", "Sélectionner un fichier...")
-                        ),
-                        box(
-                            title = "Charger la couche territoire en geojson",
-                            "Fichier GeoJSON comportant un ou plusieurs polygones, en WGS84",
-                            fileInput("territory_file", "Sélectionner un fichier...")
-                        )
-                    ),
-                    fluidRow(
-                        box(
-                            title = "Paramètres de l'atlas"
-                        )
-                    )
+                )
             )
         )
     )
 )
+
