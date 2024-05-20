@@ -28,8 +28,12 @@ function(input, output) {
         read.csv2(file$datapath, h=T)
     })
 
+  response <- reactive({
+    subset(data(), data()$cd_nom==210264)
+    })
+
   output$dataTable <- renderDT({
-        datatable(data(), options = list(pageLength = 5))  # affiche les données avec pagination
+        datatable(response(), options = list(pageLength = 5))  # affiche les données avec pagination
     })
 
 }
