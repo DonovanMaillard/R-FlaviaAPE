@@ -25,11 +25,11 @@ function(input, output) {
         if (is.null(file)) {
             return(data.frame())  # retourne un dataframe vide si aucun fichier n'est chargé
         }
-        read.csv(file$datapath)
+        read.csv2(file$datapath, h=T)
     })
 
   output$dataTable <- renderDT({
         datatable(data(), options = list(pageLength = 5))  # affiche les données avec pagination
     })
-  
+
 }
