@@ -39,7 +39,7 @@ function(input, output) {
     })
 
   output$nb_species <- renderText({
-        nrows(response())
+        nrow(response())
     })
 
 }
