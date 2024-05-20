@@ -10,6 +10,7 @@
 library(shiny)
 library(shinydashboard)
 library(DT)
+library(dplyr)
 
 options(shiny.maxRequestSize = 100*1024^2)  # 100 Mo en bytes
 
@@ -29,7 +30,8 @@ function(input, output) {
     })
 
   response <- reactive({
-    subset(data(), data()$cd_nom==210264)
+    data() %>%
+      distinct(cd_ref, nom_valide, group3_inpn)
     })
 
   output$dataTable <- renderDT({
