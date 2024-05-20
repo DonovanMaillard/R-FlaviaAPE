@@ -43,18 +43,10 @@ dashboardPage(
                             )
                         )
                     ),
-                    # Si les données sources sont en attente : 
-                    fluidRow(
-                        textOutput("token")
-                        ),
                     # Si des données sources sont fournies, retourner le rapport :
                     fluidRow(
                         box(title = "Rapport automatique : analyse descriptive", status = "success", solidHeader = TRUE, width = 12,
-                            # Données de synthèse globale
-                            fluidRow(
-                                column(12,
-                                    DTOutput(outputId="OPData")
-                                )
+                            DTOutput(outputId="OPData")
                             )
                         )
                     )
