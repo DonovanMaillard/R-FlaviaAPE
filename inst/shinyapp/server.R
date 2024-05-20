@@ -30,15 +30,13 @@ function(input, output) {
         stop(safeError(e))
       }
     )
-  })
-
-
-  # Déclencher l'analyse au clic de l'utilisateur
-  input$LaunchReport
-  isolate({
-    output$DTData <- renderDT({
-      data
-      })
     })
-  
+
+    # Déclencher l'analyse au clic de l'utilisateur
+    output$DTData <- renderDT({
+      input$LaunchReport
+        isolate({
+          data()
+        })
+      })
 }
