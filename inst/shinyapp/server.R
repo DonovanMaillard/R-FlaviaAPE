@@ -29,17 +29,21 @@ function(input, output) {
         read.csv2(file$datapath, h=T)
     })
 
-  response <- reactive({
+  taxa <- reactive({
     data() %>%
       distinct(cd_ref, nom_valide, group3_inpn)
     })
 
   output$dataTable <- renderDT({
-        datatable(response(), options = list(pageLength = 5))  # affiche les données avec pagination
+        datatable(taxa(), options = list(pageLength = 5))  # affiche les données avec pagination
     })
 
   output$nb_species <- renderText({
-        nrow(response())
+        nrow(taxa())
+    })
+
+  output$nb_species <- renderText({
+        nrow(data())
     })
 
 }

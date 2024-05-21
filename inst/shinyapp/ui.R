@@ -52,7 +52,7 @@ dashboardPage(
                                                 "Nombre de données"
                                             ),
                                             card_body(
-                                                h3(textOutput(outputId="nb_species"))
+                                                h3(textOutput(outputId="nb_data"))
                                             )
                                         )
                                     ),
