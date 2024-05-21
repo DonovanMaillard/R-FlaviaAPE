@@ -76,7 +76,7 @@ dashboardPage(
                                                 "Nombre de relevés"
                                             ),
                                             card_body(
-                                                h3(textOutput(outputId="nb_species"))
+                                                h3("à calculer")
                                             )
                                         )
                                         )
@@ -91,7 +91,7 @@ dashboardPage(
                                                 "Nombre de sessions de prospections"
                                             ),
                                             card_body(
-                                                h3(textOutput(outputId="nb_species"))
+                                                h3("à calculer")
                                             )
                                         )
                                     ),
@@ -102,7 +102,7 @@ dashboardPage(
                                                 "Méthodes utilisées"
                                             ),
                                             card_body(
-                                                h3(textOutput(outputId="nb_species")),
+                                                h3("à calculer"),
                                                 br(),
                                                 h4("Dont X espèces et Y sous-espèces")
                                             )
@@ -115,7 +115,7 @@ dashboardPage(
                                                 "Autre info"
                                             ),
                                             card_body(
-                                                h3(textOutput(outputId="nb_species"))
+                                                h3("à calculer")
                                             )
                                         )
                                         )

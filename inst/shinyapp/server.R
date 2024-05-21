@@ -29,6 +29,10 @@ function(input, output) {
         read.csv2(file$datapath, h=T)
     })
 
+  output$nb_data <- renderText({
+        nrow(data())
+    })
+
   taxa <- reactive({
     data() %>%
       distinct(cd_ref, nom_valide, group3_inpn)
@@ -40,10 +44,6 @@ function(input, output) {
 
   output$nb_species <- renderText({
         nrow(taxa())
-    })
-
-  output$nb_species <- renderText({
-        nrow(data())
     })
 
 }
