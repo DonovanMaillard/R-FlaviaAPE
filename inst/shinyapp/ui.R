@@ -10,6 +10,7 @@
 library(shiny)
 library(shinydashboard)
 library(DT)
+library(bslib)
 
 dashboardPage(
     dashboardHeader(title = "Flavia APE - Analyses"),
