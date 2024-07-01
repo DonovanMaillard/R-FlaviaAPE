@@ -1,0 +1,390 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"content",
+				"align-content"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"meta",
+				"meta_create_date"
+			],
+			[
+				"valid",
+				"valid_on_territory"
+			],
+			[
+				"id_nomenclature",
+				"id_nomenclature_preferendum_eco"
+			],
+			[
+				"id",
+				"id_nomenclature_chorologie"
+			],
+			[
+				"id_",
+				"id_nomenclature_preferendum_eco"
+			],
+			[
+				"id_nom",
+				"id_nomenclature_menace"
+			],
+			[
+				"cd",
+				"cd_hab"
+			],
+			[
+				"bib",
+				"bib_nomenclatures_types"
+			],
+			[
+				"border-colo",
+				"border-right-color"
+			],
+			[
+				"synthese",
+				"synthese_with_metadata"
+			],
+			[
+				"ref",
+				"ref_geo"
+			],
+			[
+				"alt",
+				"altitude_max"
+			],
+			[
+				"al",
+				"altitude_max"
+			],
+			[
+				"altitude",
+				"altitude_min"
+			],
+			[
+				"code_",
+				"code_postal"
+			],
+			[
+				"dict_",
+				"dict_fields"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Instal",
+				"Selection: Select All"
+			],
+			[
+				"install",
+				"Selection: Select All"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/poleinvertebres/GitHub/RFlaviaAPE"
+	],
+	"file_history":
+	[
+		"/Users/poleinvertebres/GitHub/RFlaviaAPE/inst/shinyapp/server.R",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1719351429/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/credits.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1719351673/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/custom.css",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1719353536/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/templates/core/layout.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1719353496/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/templates/_main.generic.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1719352644/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/footer.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1719351803/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/mentions-legales.html",
+		"/Users/poleinvertebres/Desktop/SAP_Data/Script_traitements_R",
+		"/Users/poleinvertebres/Desktop/## Synthèse de la maintenance :",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1718547090/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/presentation.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1718546105/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/introduction.html",
+		"/Users/poleinvertebres/Downloads/conf_apache_flavia-refonte",
+		"/Users/poleinvertebres/GitHub/RFlaviaAPE/DESCRIPTION",
+		"/Users/poleinvertebres/GitHub/RFlaviaAPE/inst/shinyapp/ui.R",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1714549624/flavia_360220.json/home/outilsflavia/Portail/index.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1714407996/flavia_360220.json/home/outilsflavia/geonature/config/geonature_config.toml",
+		"/Users/poleinvertebres/Desktop/index_louna.html",
+		"/Users/poleinvertebres/Downloads/# Scripts cartographie R",
+		"/Users/poleinvertebres/Downloads/script_pinv.sql",
+		"/Users/poleinvertebres/GitHub/RFlaviaAPE/readme.rst",
+		"/Users/poleinvertebres/Downloads/# Utilisation du script cartographie",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1713814822/flavia_360220.json/home/outilsflavia/geonature/config/geonature_config.toml",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1712263865/atlas_smiril.json/home/dn-atlas-smiril/atlas/data/atlas/7.atlas.vm_communes.sql",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1712263771/atlas_smiril.json/home/dn-atlas-smiril/atlas/data/gn2/atlas_ref_geo.sql",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1712263368/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/bandeaulogoshome.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1712263919/atlas_smiril.json/home/dn-atlas-smiril/atlas/data/atlas/2.atlas.vm_observations.sql",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710882136/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/bandeaulogoshome.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710923806/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/custom.css",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710924514/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/templates/core/layout.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710924648/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/configuration/config.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710883077/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/presentation.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710881833/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/introduction.html",
+		"/Users/poleinvertebres/Desktop/test_cartes_flavia/.Rprofile",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710104582/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/bandeaulogoshome.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710105868/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/footer.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710105052/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/custom.css",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710106002/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/presentation.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1710104139/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/footer.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709887173/flavia_360220.json/home/outilsflavia/geonature/backend/geonature/utils/config_schema.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709887044/flavia_360220.json/home/outilsflavia/geonature/config/default_config.toml.example",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709886863/flavia_360220.json/home/outilsflavia/geonature/config/geonature_config.toml",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709539819/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/introduction.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709539667/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/templates/speciesSheet/charts.html",
+		"/Users/poleinvertebres/Desktop/permissions_monitoring.sql",
+		"/Users/poleinvertebres/Downloads/Miramella/BBD_ortho_fusion_versSIG_fin.csv",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Donnees_sp/data_postgis-1709152703540.csv",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Donnees_sp/data_sp.csv",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Donnees_sp/data_sp.geojson",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709499736/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/presentation.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1709498809/atlas_smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/custom.css",
+		"/Users/poleinvertebres/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/atlas_smiril.json",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Donnees_sp/data_postgis.csv",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Donnees_sp/data_geojson.csv",
+		"/Users/poleinvertebres/Desktop/Scripts-Annule-Remplace_PINV.sql",
+		"/Users/poleinvertebres/Desktop/signature_mail.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708462800/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/configuration/config.py.example",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708465207/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/mentions-legales.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708462720/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/configuration/config.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708461075/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/custom.css",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708463800/atlas-smiril.json/home/dn-atlas-smiril/atlas/atlas/static/custom/templates/footer.html",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708248790/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/get_cor_gbif_taxref.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708262588/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/README.rst",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708249013/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/config.py",
+		"/Users/poleinvertebres/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/pole-gnadmin.json",
+		"/Users/poleinvertebres/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/atlas-smiril.json",
+		"/Users/poleinvertebres/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/data-nature-gn.json",
+		"/Users/poleinvertebres/GitHub/api2GN/api2gn/tasks.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708248860/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/config.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708172472/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/get_cor_gbif_taxref.py",
+		"/Users/poleinvertebres/Desktop/prepa_GBIF",
+		"/Users/poleinvertebres/GitHub/api2GN/api2gn/config_schema.py",
+		"/Users/poleinvertebres/GitHub/api2GN/api2gn/utils.py",
+		"/Users/poleinvertebres/Desktop/prepa_gbif_api2gn",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708120946/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/get_cor_gbif_taxref.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708092701/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/get_cor_gbif_taxref.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708092589/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/README.rst",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708092919/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/config.py",
+		"/Users/poleinvertebres/Desktop/get_cor_gbif_taxref.py",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1708092674/flavia_360220.json/home/outilsflavia/taxhub/data/scripts/cor_gbif_taxref/config.py.sample",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Documentation_utilisateurs.txt",
+		"/Users/poleinvertebres/Desktop/Script_install_QGis_Lizmap.txt",
+		"/Users/poleinvertebres/Desktop/scripts_loparvi.sql",
+		"/Users/poleinvertebres/Downloads/gbif_parser",
+		"/Users/poleinvertebres/Downloads/install_lizmap_debian11_clean.md",
+		"/Users/poleinvertebres/Desktop/install_lizmap_debian11_clean.md",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1705228403/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/module.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1705225235/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/observation.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1705224619/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/site.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1705222421/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/visit.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1705224701/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/observation.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704884708/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/observation.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704884492/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/visit.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704376525/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/site.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704885002/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/synthese.sql",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704884761/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/nomenclature.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704375932/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/config.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704376480/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/nomenclature.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704375958/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/module.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1704376172/flavia_360220.json/home/outilsflavia/sous_modules_monitorings_flavia/sterf/custom.json",
+		"/Users/poleinvertebres/Downloads/campanule_mtd.sql",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/Documentation_tests.md",
+		"/Users/poleinvertebres/Downloads/Archive_exports_ORB_V1",
+		"/Users/poleinvertebres/Desktop/Analyses_ListesRouges_R/get_data_from_db.sql",
+		"/Users/poleinvertebres/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/flavia_360220.json",
+		"/var/folders/nl/235ckfv17fd147pt6fm47ng00000gn/T/sublime-sftp-browse-1701764783/flavia_360220.json/home/outilsflavia/Portail/index.html",
+		"/Users/poleinvertebres/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/templates/Taxa/ecology/edit_lifetraits.html",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/templates/Taxa/ecology/interactions.html",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/templates/list_papillons.html",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/templates/Taxa/ecology/ecology.html",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/templates/home.html",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/components/models.py",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/components/routes.py",
+		"/Users/poleinvertebres/GitHub/Lifetraits/app/components/forms.py",
+		"/Users/poleinvertebres/GitHub/Lifetraits/data/data.sql",
+		"/Users/poleinvertebres/GitHub/Lifetraits/requirements.txt",
+		"/Users/poleinvertebres/GitHub/Lifetraits/notes_developpements.txt",
+		"/Users/poleinvertebres/GitHub/Lifetraits/config/config.py",
+		"/Users/poleinvertebres/github/Lifetraits/.gitignore",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/ecology/edit_lifetraits.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/detail_lepido.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/external_sources/external_sources.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/host-plants.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/synthese_flaviabase.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/main.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/static/custom/custom.css",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/taxonomy/taxonomy.html",
+		"/Users/poleinvertebres/github/Lifetraits/app/templates/Taxa/ecology.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "r_flavia-ape.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
