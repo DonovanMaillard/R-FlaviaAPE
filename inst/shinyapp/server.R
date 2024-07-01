@@ -36,13 +36,11 @@ function(input, output) {
 
   # Liste des taxons
   taxa <- reactive({
-    req(nrow(taxa()) > 0, "En attente de données")
     data() %>%
       distinct(cd_ref, nom_valide, group3_inpn)
     })
 
   output$dataTable <- renderDT({
-    req(nrow(taxa()) > 0, "En attente de données")
     datatable(taxa(), options = list(pageLength = 5))# affiche les données avec pagination
     })
 
