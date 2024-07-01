@@ -29,19 +29,33 @@ function(input, output) {
         read.csv2(file$datapath, h=T)
     })
 
+  # Nombre de données
   output$nb_data <- renderText({
         nrow(data())
     })
 
+  # Liste des taxons
   taxa <- reactive({
+    req(nrow(taxa()) > 0, "En attente de données")
     data() %>%
       distinct(cd_ref, nom_valide, group3_inpn)
     })
 
   output$dataTable <- renderDT({
-        datatable(taxa(), options = list(pageLength = 5))  # affiche les données avec pagination
+    req(nrow(taxa()) > 0, "En attente de données")
+    datatable(taxa(), options = list(pageLength = 5))# affiche les données avec pagination
     })
 
+  output$export_taxa <- downloadHandler(
+    filename<-function(){
+        paste('taxons_',Sys.Date(),'.csv',sep=',')
+      },
+      content<-function(){
+        write.csv2(taxa(),filename)
+      }
+    )
+
+  # Nombre de taxons
   output$nb_species <- renderText({
         nrow(taxa())
     })

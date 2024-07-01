@@ -126,7 +126,8 @@ dashboardPage(
                     # Retourner la liste des espèces dans une datatable
                     fluidRow(
                         box(title = "Taxons", status = "success", solidHeader = TRUE, width = 12,
-                            DTOutput(outputId="dataTable")
+                            DTOutput(outputId="dataTable"),
+                            downloadButton('export_taxa', 'Exporter en CSV')
                         )
                     )
             )
